@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="grid-container1">
+      <div class="grid-item grid-item1">
+        <img class="mypic" src="media/pic_orig.jpg" alt="My Picture" />
+        <p id="name">JOHN DOE</p>
+        <p id="position"></p>
+        <p>
+          <button id="download" class="btn">
+            <span class="fa fa-download"></span>
+            <a class="a_download" href="media/resume.pdf" target="_blank">Resume</a>
+          </a>
+          </button>
+          <button id="btn_contact" class="btn">Contact me</button>
+        </p>
+      </div>
+      <div class="grid-item grid-item2">
+        <h5>About Me and Academic Honesty</h5>
+        <p class="small_font">
+          I love <em>watching movies and sports</em> for stress reliever. I have a professional
+          experience in <strong>Web Development</strong>, though I'm not really good in designing a
+          website, I can use the <abbr title="Hypertext Markup Language">HTML</abbr> and
+          <abbr title="Cascading Style Sheet">CSS</abbr> 3 when needed. I can work on the back-end
+          using <abbr title="PHP: Hypertext Preprocessor">PHP</abbr> and MySQL for database or front
+          end web development using <em>javascript</em> and javascript frameworks. For more
+          information about my skills, please download my resume.
+        </p>
+        <p class="small_font">
+          I declare that my assessment is wholly my own work in accordance with Seneca Academic
+          Policy. No part of this assessment has been copied manually or electronically from any
+          other source (including web sites) except for the information supplied by the WEB222
+          instructors and / or made available in this assessment for my use. I also declare that no
+          part of this assignment has been distributed to other students.
+        </p>
+        <div class="small_font">
+          Date:
+          <time id="current_date" datetime="2022-04-12 00:00">April 13, 2022</time>
+        </div>
+      </div>
+
+      <div class="grid-item grid-item3">
+        <h5>Basic Information</h5>
+        <div>
+          <span class="basic_label">AGE:</span>
+          <span id="age" class="small_font"></span>
+        </div>
+        <div>
+          <span class="basic_label">EMAIL:</span>
+          <span id="email" class="small_font"></span>
+        </div>
+        <div>
+          <span class="basic_label">LANGUAGE:</span>
+          <span id="language" class="small_font"></span>
+        </div>
+        <div>
+          <span class="basic_label">CLASS SECTION: </span>
+          <span id="class_section" class="small_font"></span>
+        </div>
+        <div>
+          <span class="basic_label">STUDENT ID:</span>
+          <span id="student_id" class="small_font"></span>
+        </div>
+        <div>
+          <span class="basic_label">INSTRUCTOR:</span>
+          <span id="instructor" class="small_font"></span>
+        </div>
+      </div>
+    </div>
+    <div class="educ"><h5>Education</h5></div>
+    <div class="grid-container2">
+      <div class="grid-item grid-item4">
+        <p class="small_font">2021-2023(expected)</p>
+        <span>2 Years Diploma</span>
+      </div>
+      <div class="grid-item grid-item5">
+        <div>Computer Programing Diploma</div>
+        <div class="small_font school">SENECA COLLEGE</div>
+        <p class="small_font">
+          Awarded with <strong>President's Honour List</strong> for Fall 2021
+        </p>
+      </div>
+      <div class="grid-item grid-item6">
+        <p class="small_font">2003-2007</p>
+        <span>Bachelor's Degree</span>
+      </div>
+      <div class="grid-item grid-item7">
+        <div>Bachelor of Science in Information Technology</div>
+        <div class="small_font school">ADAMSON UNIVERSITY</div>
+        <p class="small_font">Awarded with <strong>Top 5 IT Student</strong></p>
+      </div>
+    </div>
+
+    <div class="contact_me" id="contact_me"><h5>Contact Me</h5></div>
+    <!--FORM-->
+    <div class="form-container">
+     
+      <div class="row">
+        <div class="col-label">
+          
+        </div>
+        <div class="col-input error" id="error">
+          <i class="fa fa-times-circle"></i>
+          <span id="error_message">Error Message</span>
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-label">
+          
+        </div>
+        <div class="col-input success" id="success">
+          <i class="fa fa-check"></i>
+          <span id="success_message">Success Message</span>
+          
+        </div>
+      </div>
+
+      <form action="#">
+        <div class="row">
+          <div class="col-label">
+            <label for="form_name">Name</label>
+          </div>
+          <div class="col-input">
+            <input type="text" id="form_name" class="input" name="form_name" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-label">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-input">
+            <input type="email" id="email" class="input" name="email" placeholder="sample@email.com">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="address">Address</label>
+          </div>
+          <div class="col-input">
+            <input type="text" id="address" class="input" name="address" placeholder="Your address..">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="city">City</label>
+          </div>
+          <div class="col-input">
+            <input type="text" list="city_list" class="input" id="city" name="city"  placeholder="Select your city" />
+          </div>
+        </div>
+
+        <datalist id="city_list">
+            <option value="Toronto">
+            <option value="Vaughan">
+            <option value="Markham">
+            <option value="Belleville">
+            <option value="Kingston">
+            <option value="Ottawa"></option>
+            <option value="Stratford"></option>
+        </datalist>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="postal">Postal Code</label>
+          </div>
+          <div class="col-input">
+            <input type="text" id="postal" class="input" name="postal" placeholder="Postal Code..">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+
+          </div>
+          <div class="col-input">
+            <div> <strong>What this is about?</strong> </div>
+            <div><input type="radio" id="comment" name="selection" checked="checked"> Comment</div>
+            <div><input type="radio" id="question"  name="selection"> Question</div>
+            <div><input type="radio" id="hiring" name="selection"> Hiring</div>
+          </div>
+        </div>
+
+        <div class="row hrate">
+          <div class="col-label">
+            <label for="hourly_rate">Hourly Rate</label>
+          </div>
+          <div class="col-input">
+            <input type="text" id="hourly_rate" class="input" name="hourly_rate" placeholder="">
+          </div>
+        </div>
+        
+        
+        <div class="row">
+          <div class="col-label">
+            <label for="message" id="message_label">Message</label>
+          </div>
+          <div class="col-input">
+            <textarea id="message" name="message" class="input" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit" id="submit">
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
